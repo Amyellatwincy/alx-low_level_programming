@@ -15,7 +15,7 @@ int main(void)
 
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -26,6 +26,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-
 	return (0);
 }
