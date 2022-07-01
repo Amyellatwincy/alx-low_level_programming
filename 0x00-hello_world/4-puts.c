@@ -2,7 +2,7 @@
 
 /**
  * main - prints the phrase " programming is like a multilingual puzzle
- * Return: 0
+ * Return: Always 0n(success)
  */
 int main(void)
 {
