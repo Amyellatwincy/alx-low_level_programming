@@ -26,8 +26,9 @@ else if (c > b)
 }
 else
 {
-	largest = b;
+	largets = b;
 }
 
 return (largest);
 }
+
