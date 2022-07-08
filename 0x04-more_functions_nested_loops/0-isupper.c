@@ -3,11 +3,19 @@
 /**
  * _isupper - this is a function to check upper case alphas
  * @c: an interger parameter
- * Return: something but success
+ * Return: give 1 or 0
  */
+
 int _isupper(int c)
 {
-	if (c >= 'A' && c  <= 'Z')
-		return (1);
-	return (0);
+if (c >= 'A' && c  <= 'Z')
+{
+return (1);
+}
+
+else
+{
+return (0);
+}
+
 }
