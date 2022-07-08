@@ -3,7 +3,7 @@
 /**
  * print_triangle - prints a triangle, followed by a new line
  * @size: size of the triangle
- *   Return: void
+ * Return: void
  */
 
 void print_triangle(int size)
@@ -21,7 +21,7 @@ void print_triangle(int size)
 		ii = 0;
 		while (ii < i)
 		{
-			_putcharchar('#');
+			_putchar('#');
 			ii++;
 		}
 
