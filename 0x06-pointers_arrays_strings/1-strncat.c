@@ -8,7 +8,7 @@
  * @n: interger parameter to be compare index to
  * Return: returns new concatenated string
  */
-char *_strncat(char  *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n);
 {
 strncat(*dest, *src, n);
 return (dest);
