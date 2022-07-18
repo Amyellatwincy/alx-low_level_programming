@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strchr - string character
@@ -9,7 +9,7 @@ include "main.h"
 char *_strchr(char *s, char c)
 {
 
-while (*s != '\0')/*Declaring While*/
+while (*s != '\0')/*Declaring WHILE*/
 {
 if (*s == c) /*if s == c*/
 {
