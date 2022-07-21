@@ -21,7 +21,7 @@ return (helperFunction(num, i + 1));
 }
 else
 {
-return (i);
+return (1);
 }
 }
 /**
