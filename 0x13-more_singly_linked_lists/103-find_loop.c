@@ -1,25 +1,35 @@
 #include "lists.h"
 
 /**
- *  * print_listint - prints all the elements of a linked list
+ * find_listint_loop - finds the loop in a linked list
  *
- *   * @h: linked list of type listint_t to print
- *
- *    *
- *
- *     * Return: number of nodes
- *
+ *   * @head: linked list to search for
+ * Return: address of the node where the loop starts, or NULL
  */
 
-size_t print_listint(const listint_t *h)
+listint_t *find_listint_loop(listint_t *head)
+{
+listint_t *slow = head;
+listint_t *fast = head;
+if (!head)
+return (NULL);
+while (slow && fast && fast->next)
+{
+fast = fast->next->next;
+slow = slow->next;
 
+if (fast == slow)
 {
-size_t num = 0;
-while (h)
+slow = head;
+
+while (slow != fast)
 {
-printf("%d\n", h->n);
-num++;
-h = h->next;
+slow = slow->next;
+fast = fast->next;
 }
-return (num);
+return (fast);
+}
+}
+
+return (NULL);
 }
