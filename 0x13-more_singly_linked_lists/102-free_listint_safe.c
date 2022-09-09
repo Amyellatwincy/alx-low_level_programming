@@ -9,10 +9,7 @@ size_t free_listint_safe(listint_t **h);
  *   *                      in a looped listint_t linked list.
  *
  *    * @head: A pointer to the head of the listint_t to check.
- *
- *     *
- *
- *      * Return: If the list is not looped - 0.
+ * Return: If the list is not looped - 0.
  *
  *       *         Otherwise - the number of unique nodes in the list.
  *
@@ -56,17 +53,10 @@ return (0);
  *
  *   *                     can free lists containing loops)
  *
- *    * @h: A pointer to the address of
- *
- *     *     the head of the listint_t list.
- *
- *      *
- *
- *       * Return: The size of the list that was freed.
- *
- *        *
- *
- *         * Description: The function sets the head to NULL.
+ *    * @h: A pointer to the addre
+ * the head of the listint_t list.
+ * Return: The size of the list that was freed.
+ * Description: The function sets the head to NULL.
  */
 
 size_t free_listint_safe(listint_t **h)
